@@ -1,6 +1,28 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p hello #{name}
+  .jumbotron.mt-5
+    .container
+      .row
+        .col-md-7
+          h1 computer Not working
+          p
+            |is your computer working slow
+          p
+            a.btn.btn-primary.btn-lg(href="#") Read more
+        .col-md-5
+          img.img-fluid(src="images/mouse.jpg",max-width: 100%)
+  .row.mt-5
+    .col-md-4
+      .card.card-body.bg-light
+        h2 hardware Problem??
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut pariatur libero quidem, aspernatur rerum assumenda consectetur illo molestias cupiditate velit. Cumque provident quas perspiciatis accusantium ducimus sapiente, deleniti repudiandae tempore.,
+    .col-md-4
+      .card.card-body.bg-light
+        h2 Software Problem
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum qui voluptas ipsam iure perferendis illum, nihil eos ut, quasi sunt sint soluta vitae ipsum iste magnam autem reprehenderit odio eveniet.,
+    .col-md-4
+      .card.card-body.bg-light
+        h2 pc tune up?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sint ab sapiente blanditiis modi. Corporis, nihil, voluptates aliquam expedita vero voluptate vitae libero excepturi nisi nostrum aliquid minus magni explicabo?
+

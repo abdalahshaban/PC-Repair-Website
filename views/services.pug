@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+    h1 services
+
+    each service , i in services
+        div.card.card-body.bg-light.mt-5
+            h3 #{service.name}
+            p #{service.description}
+            p
+                | price Range : #{service.price_range}
+        
+    

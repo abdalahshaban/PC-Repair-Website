@@ -3,5 +3,27 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
   body
-    block content
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+      a.navbar-brand(href='#') UWK
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li(class=title=='home'?'active':undefined)
+            a.nav-link(href='/') home
+          li(class=title=='about'?'active':undefined)
+            a.nav-link(href='/about') about  
+          li(class=title=='services'?'active':undefined)
+            a.nav-link(href='/services') services
+          li(class=title=='contact'?'active':undefined)
+            a.nav-link(href='/contact') contact
+    .container
+      block content
+    
+    hr
+    footer
+      .container
+        .row.justify-content-center
+          p UWK &copy  2019
